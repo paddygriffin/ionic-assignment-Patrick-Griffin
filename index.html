@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Mobile Programming Project-->
+<html>
+  <head>
+	<center>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Healty living</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="calorific">
+
+
+
+
+  
+  
+<!-- Header -->
+<ion-header-bar class="bar-positive">
+        <h1 class="title">Healty Living</h1>
+</ion-header-bar>
+
+
+
+<!-- ionic tabs to make a neater program and to allow the user to go between 
+the list of calories and the calorie counter-->
+<ion-tabs class="tabs-positive">
+    <ion-tab title="foods">
+<ion-content>
+
+
+		<!--A table to list foods and calories -->
+        <table style="border:2px solid black;">
+			<br></br><!--Add a break for neater viewing-->
+			<h3 align="center">Common Foods</h3>
+			<tr>
+									<!--border = 1 pixel and is red in color  -->				<!--border = 1 pixel and is green in color add an extra 2 columns  -->
+			<th  style="border:1px solid red;">Foods(general)</th><th style="border:1px solid red;">Calories</th><th style="border:1px solid green;">Burger King</th><th style="border:1px solid green;">Calories</th>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Apple</td><td style="border:1px solid red;">72</td><td style="border:1px solid green;">Whopper Sandwich</td><td style="border:1px solid green;">720</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">bagel</td><td style="border:1px solid red;">289</td><td style="border:1px solid green;">Tripple Whopper Sandwich</td><td style="border:1px solid green;">1020</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Banana</td><td style="border:1px solid red;">105</td><td style="border:1px solid green;">Double Whopper Sandwich</td><td style="border:1px solid green;">1020</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Bread/one slice</td><td style="border:1px solid red;">66</td><td style="border:1px solid green;">Cheese Burger</td><td style="border:1px solid green;">360</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">1 table spoon of butter</td><td style="border:1px solid red;">102</td><td style="border:1px solid green;">Big King</td><td style="border:1px solid green;">530</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Carrots/1 cup</td><td style="border:1px solid red;">52</td><th style="border:1px solid blue;">General Spreads</th><th style="border:1px solid blue;">Calories</th>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Cheddar cheese/1 slice</td><td style="border:1px solid red;">113</td><td style="border:1px solid blue;">Gravy</td><td style="border:1px solid blue;">19</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">chicken breast</td><td style="border:1px solid red;">142</td><td style="border:1px solid blue;">bbq sauce</td><td style="border:1px solid blue;">20</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Choco chip cookie</td><td style="border:1px solid red;">59</td><td style="border:1px solid blue;">Mayonnaise 1cup</td><td style="border:1px solid blue;">1577</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">coffe</td><td style="border:1px solid red;">2</td><td style="border:1px solid blue;">Mayo,1tbsp</td><td style="border:1px solid blue;">100</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">cola</td><td style="border:1px solid red;">136</td><td style="border:1px solid blue;">Mustard</td><td style="border:1px solid blue;">10</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">corn/1 cup</td><td style="border:1px solid red;">180</td><td style="border:1px solid blue;">soy sauce</td><td style="border:1px solid blue;">12</td>
+			</tr><tr>
+			<td style="border:1px solid red;">Milk-full fat</td><td style="border:1px solid red;">150</td><td style="border:1px solid blue;">Spaghetti sauce</td><td style="border:1px solid blue;">120(approx)</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">Low fat Milk</td><td style="border:1px solid red;">102</td><td style="border:1px solid blue;">Sugar</td><td style="border:1px solid blue;">15-tsp</td>
+			</tr>
+			<tr>
+			<td style="border:1px solid red;">strawberry milk</td><td style="border:1px solid red;">244</td><td style="border:1px solid blue;">sugar</td><td style="border:1px solid blue;">46-tbsp</td>
+			</tr><tr>
+			<td style="border:1px solid red;">Ice Cream</td><td style="border:1px solid red;">240</td><td style="border:1px solid blue;">Sugar</td><td style="border:1px solid blue;">770-cup</td>
+			</tr><tr>
+			<td style="border:1px solid red;">Apple Juice</td><td style="border:1px solid red;">60</td><td style="border:1px solid blue;">Jelly</td><td style="border:1px solid blue;">54</td>
+			</tr><tr>
+			<td style="border:1px solid red;">boiled egg</td><td style="border:1px solid red;">79</td><td style="border:1px solid blue;">honey</td><td style="border:1px solid blue;">64</td>
+			</tr>
+
+
+			<tr>
+									<!--border = 1 pixel and is blue in color  -->
+			<th style="border:1px solid blue;">McDonalds</th><th style="border:1px solid blue;">Calories</th><th style="border:1px solid orange;">Soup-caned</th><th style="border:1px solid orange;">Calories</th>
+			</tr>
+			<td style="border:1px solid blue;">big mac</td><td style="border:1px solid blue;">530</td><td style="border:1px solid orange;">Bean+bacon soup</td><td style="border:1px solid orange;">431</td>
+			</tr>
+			<td style="border:1px solid blue;">quatrer pounder with cheese</td><td style="border:1px solid blue;">520</td><td style="border:1px solid orange;">chicken noodle soup</td><td style="border:1px solid orange;">140</td>
+			</tr>
+			<td style="border:1px solid blue;">bacon burger</td><td style="border:1px solid blue;">720</td><td style="border:1px solid orange;">Chili beef soup</td><td style="border:1px solid orange;">385</td>
+			</tr>
+			<td style="border:1px solid blue;">double quatrer pounder + cheese</td><td style="border:1px solid blue;">740</td><td style="border:1px solid orange;">chicken soup</td><td style="border:1px solid orange;">307</td>
+			</tr>
+			<td style="border:1px solid blue;">Mc Chicken wrap</td><td style="border:1px solid blue;">650</td><td style="border:1px solid orange;">Veg soup</td><td style="border:1px solid orange;">175</td>
+			</tr>
+			<td style="border:1px solid blue;">McRib</td><td style="border:1px solid blue;">500</td><td style="border:1px solid orange;">potato soup</td><td style="border:1px solid orange;">311</td>
+			</tr>
+
+
+		</table><!-- End of table-->
+</ion-content>
+</ion-tab><!--End of food tab-->
+
+<!--A seperate tab to count calories for each meal-->
+<ion-tab title="Calorie Counter">
+<ion-content>
+ <h2>Keep a calorie counter:</h2>
+
+ <p>Click the button to calculate Calories.</p>
+    <button class="button button-calm" onclick="myFunction()">Calculate Calories</button>
+    <br/><!-- this button is clicked to calculate calories the class is used to add affect-->
+	
+	
+	<!--prompt user to enter amount of calories-->
+    <br/>Enter total number of calories for meal one:
+    <input type="text" id="txt1" name="text1">Enter total number of calories for second meal below:<!--each line has a unique id e.g txt1 and will be used in javascript below   -->
+        <input type="text" id="txt3" name="text1">Enter total number of calories for third meal below:
+        <input type="text" id="txt4" name="text1">Enter total number of calories for other below:
+    <input type="text" id="txt2" name="text2">
+    <p id="demo"></p>
+	<!--The information is entered and passed into the calculation below -->
+
+	<!-- Java script for the addition of calories-->
+    <script>
+	//each variable is from each meal and x is the total
+      function myFunction() {
+        var y = document.getElementById("txt1").value;<!--the id txt1 has been passe from above -->
+        var z = document.getElementById("txt2").value;
+                var m = document.getElementById("txt3").value;
+                var f = document.getElementById("txt4").value;
+        var x = +y + +z + +m + +f; // adding all numbers together
+        document.getElementById("demo").innerHTML = x;
+		
+		//a pop up to show if the user exceeded the daily amount of calories 
+		if(x>2500)//over 2500
+		{
+			alert(x);
+			alert("\nYou have exceeded the daily amount of calories of 2500"); <!--alert the user they have a higher intake than the recommended daily amount-->
+		}//if
+		else if(x<=2500)//under 2500
+		{
+			alert(x);
+		}//else if
+		
+      }
+    </script>
+	
+</ion-content>
+</ion-tab><!--End of tab--> 
+</ion-tabs><!--End of all tabs -->
+
+    </ion-pane>
+  </body>
+  </center>
+</html>
+ 
